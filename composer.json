@@ -1,49 +1,48 @@
 {
-  "name": "milebits/society",
-  "description": "A Laravel packages to allow your application to have a social network system.",
-  "type": "library",
-  "require": {
-    "laravel/framework": "^6|^7|^8",
-    "php": ">=8.0",
-    "milebits/eloquent-filters": "^4",
-    "milebits/laravel-stream": "^3",
-    "milebits/helpers": "^3"
-  },
-  "license": "GPL-3.0-or-later",
-  "authors": [
-    {
-      "name": "Hicham SADDEK",
-      "email": "h.saddek@serrahub.com",
-      "homepage": "https://linkedin.com/in/hicham-saddek",
-      "role": "Lead Developer"
+    "name": "milebits/society",
+    "description": "A Laravel packages to allow your application to have a social network system.",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "php": ">=7.0",
+        "milebits/eloquent-filters": "^4",
+        "milebits/laravel-stream": "^3",
+        "milebits/helpers": "^3"
     },
-    {
-      "name": "Milebits Systems",
-      "email": "support@milebits.systems",
-      "homepage": "https://os.milebits.com",
-      "role": "Project Manager"
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+            "name": "Hicham SADDEK",
+            "email": "h.saddek@serrahub.com",
+            "homepage": "https://linkedin.com/in/hicham-saddek",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Milebits Systems",
+            "email": "support@milebits.systems",
+            "homepage": "https://os.milebits.com",
+            "role": "Project Manager"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Milebits\\Society\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Milebits\\SocietyTests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milebits\\Society\\Providers\\SocietyServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
-  ],
-  "prefer-stable": true,
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "Milebits\\Society\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Milebits\\SocietyTests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Milebits\\Society\\Providers\\SocietyServiceProvider"
-      ]
-    }
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^9.5"
-  }
 }
