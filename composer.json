@@ -5,9 +5,9 @@
     "require": {
         "laravel/framework": "^6|^7|^8",
         "php": ">=7.0",
-        "milebits/eloquent-filters": "^4",
-        "milebits/laravel-stream": "^3",
-        "milebits/helpers": "^3"
+        "milebits/eloquent-filters": "dev-arung-develop",
+        "milebits/laravel-stream": "dev-arung-develop",
+        "milebits/helpers": "dev-arung-develop"
     },
     "license": "GPL-3.0-or-later",
     "authors": [{
@@ -44,5 +44,18 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
-    }
+    },
+    "repositories": [{
+            "type": "vcs",
+            "url": "https://github.com/arungpisyadi/eloquent-filters"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/arungpisyadi/laravel-stream"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/arungpisyadi/helpers"
+        }
+    ]
 }
